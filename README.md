@@ -1,6 +1,6 @@
 # etch-a-sketch
 A cross between a sketchpad and an etch-a-sketch. Made for The Odin Project's Foundations course.
-
+# Brief:
 Create a webpage with a 16x16 grid of square divs.
 Create the divs using JavaScript. Don’t try to create them by hand by copying and pasting them in your HTML file!
 It’s best to put your grid squares inside a “container” div. This div can be written in your HTML file.

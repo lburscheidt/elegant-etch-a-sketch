@@ -1,7 +1,5 @@
-:root {
-  --gridWidth: 480px;
-  --cellWidth: 0px;
-}
+:root{--gridWidth: 480px;
+--cellWidth: 0;}
 
 * {
   box-sizing: border-box;

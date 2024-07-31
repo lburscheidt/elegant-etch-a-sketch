@@ -1,3 +1,8 @@
+:root {
+  --gridWidth: 480px;
+  --cellWidth: 0px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,10 +10,15 @@
   border: 0;
 }
 
+.reset-btn {
+  background-color: blue;
+  color: white;
+}
+
 .grid {
   display: flex;
-  width: 320px;
-  height: 320px;
+  width: var(--gridWidth);
+  height: var(--gridWidth);
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -17,13 +27,13 @@
 .cell {
   border: 1px solid black;
   background-color: lightgray;
-  width: 20px;
-  height: 20px;
+  width: var(--cellWidth);
+  height: var(--cellWidth);
 }
 
 .cell-changed {
   background-color: black;
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  width: var(--cellWidth);
+  height: var(--cellWidth);
 }

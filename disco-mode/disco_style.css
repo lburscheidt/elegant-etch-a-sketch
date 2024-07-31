@@ -1,5 +1,5 @@
 :root {
-  --gridWidth: 0px;
+  --gridWidth: 480px;
   --cellWidth: 0px;
 }
 
@@ -24,16 +24,8 @@
   align-content: flex-start;
 }
 
-.small {
+.cell {
   border: 1px solid black;
   width: var(--cellWidth);
   height: var(--cellWidth);
-}
-
-.cell {
-  /*background-color: lightgray;*/
-}
-
-.cell-changed {
-  background-color: black;
 }

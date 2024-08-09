@@ -11,8 +11,6 @@ const resetBtn = document.getElementById("reset-btn");
 const discoBtn = document.getElementById("disco-btn");
 const standardBtn = document.getElementById("standard-btn");
 
-
-
 function makeGrid(number) {
   document.documentElement.style.setProperty(
     "--cellWidth",

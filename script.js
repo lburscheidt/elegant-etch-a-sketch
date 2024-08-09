@@ -1,15 +1,33 @@
 document.documentElement.style.setProperty("--gridWidth", "400px");
 
-
 let gridWidth = window
   .getComputedStyle(document.documentElement)
   .getPropertyValue("--gridWidth")
   .replace(/[^0-9]/g, "");
 
+let currentMode = "standard";
+
 const clearBtn = document.getElementById("clear-btn");
 const resetBtn = document.getElementById("reset-btn");
 const discoBtn = document.getElementById("disco-btn");
 const standardBtn = document.getElementById("standard-btn");
+const darkBtn = document.getElementById("dark-btn");
+
+function changeDisco() {
+  currentMode = "disco";
+}
+
+function changeStandard() {
+  currentMode = "standard";
+}
+
+/*function changeDark() {
+  currentMode = "dark";
+}*/
+
+discoBtn.addEventListener("click", changeDisco);
+
+standardBtn.addEventListener("click", changeStandard);
 
 function makeGrid(number) {
   document.documentElement.style.setProperty(
@@ -34,8 +52,8 @@ function makeGrid(number) {
 makeGrid(16);
 const cells = document.querySelectorAll(".cell");
 
-clearBtn.addEventListener("click", () =>{
-  cells.forEach(cell =>{
+clearBtn.addEventListener("click", () => {
+  cells.forEach((cell) => {
     cell.style.backgroundColor = "white";
   });
 });
@@ -53,8 +71,6 @@ function resetGrid() {
   }
 }
 
-
-
 function getRandomRgb() {
   var num = Math.round(0xffffff * Math.random());
   var r = num >> 16;
@@ -63,14 +79,18 @@ function getRandomRgb() {
   return `rgba(${r}, ${g},${b})`;
 }
 
-function changeColor(cellId) {
+/*function changeColor(cellId) {
   let cell = document.getElementById(cellId);
   let changedColor = getRandomRgb();
   cell.style.backgroundColor = changedColor;
-}
+}*/
 
-function changeColorToBlack(cellId) {
-  let cell = document.getElementById(cellId);
-  let changedColor = "#000";
-  cell.style.backgroundColor = changedColor;
+function changeColor(cellId) {
+  let changedColor;
+  if (currentMode == "standard") {
+    changedColor = "#000";
+  } else {
+    changedColor = getRandomRgb();
+  }
+  document.getElementById(cellId).style.backgroundColor = changedColor;
 }

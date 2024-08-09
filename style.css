@@ -61,11 +61,7 @@ content {
 
 button-section {
   display: flex;
-gap: 10px;
-}
-
-grid-section {
-
+  gap: 10px;
 }
 
 a,
@@ -96,7 +92,7 @@ header p {
 }
 
 .cell {
-  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,1);
   width: var(--cellWidth);
   height: var(--cellWidth);
 }

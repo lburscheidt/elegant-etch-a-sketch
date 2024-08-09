@@ -39,7 +39,7 @@ for (let i = 0; i < num; i++) {
     grid.appendChild(newCell);
   }
 }
-}*/
+}
 
 function changeColor(cellId) {
   let cell = document.getElementById(cellId);

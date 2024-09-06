@@ -39,6 +39,7 @@ function makeGrid(number) {
     "--cellWidth",
     `${gridWidth / number}px`,
   );
+
   const grid = document.querySelector(".grid");
   for (let i = 0; i < number; i++) {
     for (let j = 0; j < number; j++) {

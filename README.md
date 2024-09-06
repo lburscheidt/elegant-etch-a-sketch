@@ -10,3 +10,6 @@ I then moved on to the extra credit assignments. I changed the color change mech
 # To Do
 
 I focused on the javascript functionality over making the site look great, but I'd like to style and structure it a bit more. I'd like to separate the "Clear" and "Reset" buttons from the ones that let you select a mode. I'd also like to add more modes such as an eraser and a color picker, and a mode that combines a user-chosen color and the darkening mode.  
+
+#Credit
+The Etch-a-Sketch favicon was created by Creaticca Creative Agency. Their work is available at  https://www.flaticon.com/authors/creaticca-creative-agency

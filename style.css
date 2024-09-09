@@ -50,6 +50,7 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+/*reset ends*/
 
 /*SETUP*/
 
@@ -71,6 +72,8 @@ h6 {
 		"Open Sans",
 		"Helvetica Neue",
 		sans-serif;
+	--red-berry: #8b0a03;
+	--silver: #c9c9c9;
 }
 
 body {
@@ -84,7 +87,7 @@ body {
 
 header,
 footer {
-	background-color: var(--red-70v);
+	background-color: var(--red-berry);
 	height: 5%;
 	min-height: 60px;
 	width: 100%;
@@ -122,12 +125,12 @@ a,
 footer p,
 header p {
 	text-decoration: none;
-	color: var(--grey);
+	color: var(--silver);
 	font-size: 1.125rem;
 }
 
 .button {
-	background-color: var(--red-70v);
+	background-color: var(--red-berry);
 	color: white;
 	border-radius: 10px;
 	padding: 10px;

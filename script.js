@@ -37,7 +37,7 @@ function changeStandard() {
 function makeGrid(number) {
 	document.documentElement.style.setProperty(
 		"--cellWidth",
-		`${gridWidth / number}px`
+		`${gridWidth / number}px`,
 	);
 
 	const grid = document.querySelector(".grid");
